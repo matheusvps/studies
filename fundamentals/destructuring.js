@@ -49,3 +49,20 @@ function newRand([min = 0, max = 1000]) {
 }
 
 console.log(newRand[50,40]);
+
+// ----------------------------- New Course --------------------------------------
+let a = 'A';
+let b = 'B';
+let c = 'C';
+
+const numbers  = [1000, 2000, 3000, 4000, 5000];
+
+[a, b, c] = numbers;
+
+const [first, second, ...others] = numbers;
+const [anotherFirst, , third, , fifthy] = numbers;
+
+console.log(first, second);
+console.log(anotherFirst, third, fifthy);
+console.log(others);
+

@@ -16,3 +16,15 @@ for(let attribute in person) {
 }
 
 // forIn is most used iterating objects. For arrays, there are better alternatives.
+// For in works with indexes.
+// For of works with values . 
+
+const name = 'Matheus Github';
+
+for(let i in name) {
+   console.log(name[i]);
+}
+
+for(let value of name) {
+   console.log(value);
+}
