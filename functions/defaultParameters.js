@@ -24,3 +24,19 @@ function sum3 (a=1, b=1, c=1){
 }
 
 console.log(sum3(), sum3(3), sum3(1,2,3), sum3(0,0,0));
+
+/* 
+When creating functions using the "function" word, I can use the "arguments" variable. 
+It is an object of all arguments
+*/
+
+function arithmethics(operator, accumulator, ...numbers){
+   for (let number of numbers){
+      if(operator === '+') accumulator += number;
+      if(operator === '-') accumulator -= number;
+      if(operator === '/') accumulator /= number;
+      if(operator === '*') accumulator *= number;
+   }
+
+   console.log(accumulator);
+}
